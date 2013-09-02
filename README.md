@@ -1,11 +1,24 @@
 
-# FusionRector FREC Realtime And Request Stats Log Viewer
+# Fusion Rector FREC Realtime And Request Stats Log Viewer
 
-by [Ben Nadel][1]
+by [Ben Nadel][1] (on [Googl+][2])
 
-This is a work in progress... just a seed of an idea.
+When running a ColdFusion application on a J2EE server, I use 
+[Fusion Reactor][3] to monitor the health and performance of the web 
+application. Fusion Reactor is simply awesome. But, one of the things I find
+it lacks (at least as far as I can tell) is an easy way to read the Realtime 
+and Request stats log.
 
+The Realtime and Request stats log is part of FREC - Fusion Reactor Extensions
+for ColdFusion. It's a [40-field log file][4] (at the time of this writing) 
+that can provide insight into memory usage, request load, cache size, and many
+other interesting analytics.
+
+This project, allows you to copy/paste the contents of the FREC 
+realtimestats.log into a textarea and render it as an easy-to-read data-grid.
+That's all, at least at this moment.
 
 [1]: http://www.bennadel.com
-[2]: http://www.fusion-reactor.com
-[3]: http://docs.intergral.com/pages/viewpage.action?pageId=27656428
+[2]: https://plus.google.com/108976367067760160494?rel=author
+[3]: http://www.fusion-reactor.com
+[4]: http://docs.intergral.com/pages/viewpage.action?pageId=27656428

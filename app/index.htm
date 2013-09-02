@@ -2,16 +2,87 @@
 <html ng-app="frec">
 <head>
 	<meta charset="utf-8" />
+	<meta name="description" content="A simple utility that renders your FusionReactor Realtime Stats log data as an easy-to-read datagrid." />
 
-	<title>FusionRector FREC Realtime And Request Stats Log Viewer</title>
+	<title>
+		Fusion Rector FREC Realtime And Request Stats Log Viewer
+	</title>
 
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:100,400,600,300"></link>
 	<link rel="stylesheet" type="text/css" href="./css/frec.css"></link>
 </head>
 <body ng-controller="frec.FrecController">
 
 	<h1>
-		FusionRector FREC Realtime And Request Stats Log Viewer
+		Fusion Rector FREC Realtime And Request Stats Log Viewer
 	</h1>
+
+	<p class="author">
+		by <a href="http://www.bennadel.com" target="_blank">Ben Nadel</a>
+	</p>
+
+	<!-- BEGIN: Interfaces. -->
+	<div ng-switch="subview">
+
+		<!-- BEGIN: Data Input View. -->
+		<div ng-switch-when="input">
+
+
+			<form ng-submit="showDataGrid()">
+
+				<label>
+					<textarea ng-model="form.csv" wrap="off"></textarea>
+				</label>
+
+				<button type="submit">Parse FREC Realtime Log &raquo;</button>
+
+			</form>
+
+
+		</div>
+		<!-- END: Data Input View. -->
+
+
+		<!-- BEGIN: Data Output View. -->
+		<div ng-switch-when="output">
+
+
+			<div class="data-grid">
+
+				<table frec-data-grid width="100%" border="0" cellspacing="0" cellpadding="0">
+					<!--
+						This data grid is populated outside of the normal AngularJS workflow since 
+						it only needs to be rendered ONCE; and, having to do that inside the normal 
+						AngularJS compile / render lifecycle requires far too much processing.
+					-->
+				</table>
+
+			</div>
+
+			<div class="data-grid-insight">
+
+				<div ng-hide="dataGridInsight" class="placeholder">
+					Mouse-over column values to see description.
+				</div>
+				
+				<div ng-show="dataGridInsight" class="field">
+					<span class="label">{{ dataGridInsight.label }}</span> : 
+					<span class="value">{{ dataGridInsight.value }}</span>
+				</div>
+
+				<div ng-show="dataGridInsight" class="description">
+					({{ dataGridInsight.index }}) {{ dataGridInsight.description }}
+				</div>
+
+			</div>
+
+
+		</div>
+		<!-- END: Data Output View. -->
+
+	</div>
+	<!-- END: Interfaces. -->
+
 
 	<!-- Vendor libraries. -->
 	<script type="text/javascript" src="./vendor/jquery/jquery-2.0.3.min.js"></script>
@@ -19,7 +90,10 @@
 
 	<!-- Application scripts. -->
 	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/beans/csv-parser.js"></script>
+	<script type="text/javascript" src="./js/beans/frec-log.js"></script>
 	<script type="text/javascript" src="./js/controllers/frec-controller.js"></script>
+	<script type="text/javascript" src="./js/directives/data-grid.js"></script>
 
 </body>
 </html>

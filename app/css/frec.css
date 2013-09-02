@@ -1,4 +1,162 @@
 body {
+  color: #262626 ;
+  font-family: "Open Sans", sans-serif;
   margin: 0px 0px 0px 0px ;
   padding: 0px 0px 0px 0px ;
+}
+h1 {
+  font-size: 26px ;
+  left: 20px ;
+  line-height: 31px ;
+  margin: 0px 0px 0px 0px ;
+  position: fixed ;
+  right: 20px ;
+  top: 20px ;
+  white-space: nowrap ;
+}
+p.author {
+  color: #999999 ;
+  font-size: 18px ;
+  font-weight: 100 ;
+  line-height: 31px ;
+  margin: 0px 0px 0px 0px ;
+  position: fixed ;
+  right: 20px ;
+  top: 20px ;
+  white-space: nowrap ;
+}
+p.author a {
+  color: inherit ;
+}
+p.author a:hover {
+  color: #333333 ;
+}
+form {
+  bottom: 20px ;
+  left: 20px ;
+  margin: 0px 0px 0px 0px ;
+  padding: 0px 0px 0px 0px ;
+  position: fixed ;
+  right: 20px ;
+  top: 72px ;
+}
+form label {
+  border: 2px solid #CCCCCC ;
+  bottom: 68px ;
+  position: absolute ;
+  left: 0px ;
+  right: 0px ;
+  top: 0px ;
+}
+form textarea {
+  border-width: 0px 0px 0px 0px ;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  font-size: 14px ;
+  height: 100% ;
+  left: 0px ;
+  margin: 0px 0px 0px 0px ;
+  padding: 7px 7px 7px 7px ;
+  position: aboslute ;
+  top: 0px ;
+  white-space: nowrap ;
+  width: 100% ;
+}
+form button {
+  background-color: #FAFAFA ;
+  border: 2px solid #CCCCCC ;
+  bottom: 0px ;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  cursor: pointer ;
+  display: block ;
+  height: 70px ;
+  font-size: 20px ;
+  font-weight: 400 ;
+  left: 0px ;
+  line-height: 66px ;
+  position: absolute ;
+  width: 100% ;
+}
+form button:hover {
+  color: #FF0033 ;
+}
+div.data-grid {
+  border: 2px solid #CCCCCC ;
+  bottom: 84px ;
+  left: 20px ;
+  overflow: scroll ;
+  position: fixed ;
+  right: 20px ;
+  top: 72px ;
+}
+div.data-grid th {
+  background-color: #FAFAFA ;
+  border-bottom: 2px solid #CCCCCC ;
+  border-right: 1px solid #CCCCCC ;
+  cursor: pointer ;
+  font-size: 12px ;
+  padding: 5px 5px 5px 5px ;
+  vertical-align: bottom ;
+}
+div.data-grid td {
+  border: 1px solid #CCCCCC ;
+  border-width: 0px 1px 1px 0px ;
+  cursor: pointer ;
+  font-size: 12px ;
+  padding: 5px 5px 5px 5px ;
+}
+div.data-grid th:last-child,
+div.data-grid td:last-child {
+  border-right-width: 0px ;
+}
+div.data-grid td:hover {
+  background-color: #FF0066 ;
+  color: #FFFFFF ;
+}
+div.data-grid-insight {
+  background-color: #F0F0F0 ;
+  border: 2px solid #CCCCCC ;
+  bottom: 20px ;
+  height: 62px ;
+  left: 20px ;
+  overflow: hidden ;
+  position: fixed ;
+  right: 20px ;
+}
+div.data-grid-insight div.placeholder {
+  color: #666666 ;
+  font-style: italic ;
+  padding: 10px 15px 0px 15px ;
+}
+div.data-grid-insight div.field {
+  color: #333333 ;
+  font-size: 14px ;
+  font-weight: bold ;
+  line-height: 19px ;
+  padding: 10px 15px 4px 15px ;
+}
+div.data-grid-insight div.field span.label {
+  background-color: #FF0033 ;
+  color: #FFFFFF ;
+  display: inline-block;
+  padding: 0px 5px 0px 5px ;
+}
+div.data-grid-insight div.field span.value {
+  background-color: #262626 ;
+  color: #FFFFFF ;
+  display: inline-block;
+  padding: 0px 5px 0px 5px ;
+}
+div.data-grid-insight div.description {
+  color: #262626 ;
+  font-size: 12px ;
+  line-height: 17px ;
+  padding: 0px 15px 0px 15px ;
 }
