@@ -9,7 +9,7 @@ application. Fusion Reactor is simply awesome. But, one of the things I find
 it lacks (at least as far as I can tell) is an easy way to read the Realtime 
 and Request stats log.
 
-*[Run the FREC Realtime And Request Stats Log Viewer][5]*
+**[Run the FREC Realtime And Request Stats Log Viewer][5]**
 
 The Realtime and Request stats log is part of FREC - Fusion Reactor Extensions
 for ColdFusion. It's a [40-field log file][4] (at the time of this writing) 
