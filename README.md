@@ -21,13 +21,13 @@ That's all, at least at this moment.
 ## What You Input
 
 <p align="center">
-	![Paste in your Realtimestats.log data][5]
+	<img src="https://raw.github.com/bennadel/FREC-Log-Viewer/master/screenshots/input.png" /><br />
 </p>
 
 ## What You Output
 
 <p align="center">
-	![See your Realtimestats.log data in a data-grid][6]
+	<img src="https://raw.github.com/bennadel/FREC-Log-Viewer/master/screenshots/output.png" /><br />
 </p>
 
 
@@ -35,5 +35,3 @@ That's all, at least at this moment.
 [2]: https://plus.google.com/108976367067760160494?rel=author
 [3]: http://www.fusion-reactor.com
 [4]: http://docs.intergral.com/pages/viewpage.action?pageId=27656428
-[5]: https://raw.github.com/bennadel/FREC-Log-Viewer/master/screenshots/input.png
-[6]: https://raw.github.com/bennadel/FREC-Log-Viewer/master/screenshots/output.png
