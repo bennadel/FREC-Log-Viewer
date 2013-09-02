@@ -1,7 +1,7 @@
 
 # Fusion Rector FREC Realtime And Request Stats Log Viewer
 
-by [Ben Nadel][1] (on [Googl+][2])
+by [Ben Nadel][1] (on [Google+][2])
 
 When running a ColdFusion application on a J2EE server, I use 
 [Fusion Reactor][3] to monitor the health and performance of the web 
@@ -22,11 +22,11 @@ That's all, at least at this moment.
 
 ## What You Input
 
--> ![Realtimestats.log input][6] <-
+![Realtimestats.log input][6]
 
 ## What You Output
 
--> ![Realtimestats.log output][7] <-
+![Realtimestats.log output][7]
 
 [1]: http://www.bennadel.com
 [2]: https://plus.google.com/108976367067760160494?rel=author
