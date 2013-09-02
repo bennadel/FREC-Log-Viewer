@@ -22,18 +22,16 @@ That's all, at least at this moment.
 
 ## What You Input
 
-<p align="center">
-	<img src="https://raw.github.com/bennadel/FREC-Log-Viewer/master/screenshots/input.png" /><br />
-</p>
+![Realtimestats.log input][6]
 
 ## What You Output
 
-<p align="center">
-	<img src="https://raw.github.com/bennadel/FREC-Log-Viewer/master/screenshots/output.png" /><br />
-</p>
+![Realtimestats.log output][7]
 
 [1]: http://www.bennadel.com
 [2]: https://plus.google.com/108976367067760160494?rel=author
 [3]: http://www.fusion-reactor.com
 [4]: http://docs.intergral.com/pages/viewpage.action?pageId=27656428
 [5]: http://bennadel.github.io/FREC-Log-Viewer/app/index.htm
+[6]: ./screenshots/input.png?raw=true
+[7]: ./screenshots/output.png?raw=true
