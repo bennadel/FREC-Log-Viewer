@@ -22,11 +22,11 @@ That's all, at least at this moment.
 
 ## What You Input
 
-![Realtimestats.log input][6]
+-> ![Realtimestats.log input][6] <-
 
 ## What You Output
 
-![Realtimestats.log output][7]
+-> ![Realtimestats.log output][7] <-
 
 [1]: http://www.bennadel.com
 [2]: https://plus.google.com/108976367067760160494?rel=author
